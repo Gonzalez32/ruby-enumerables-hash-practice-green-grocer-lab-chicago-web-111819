@@ -15,7 +15,7 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupons|
-  
+  if
   
   
   
