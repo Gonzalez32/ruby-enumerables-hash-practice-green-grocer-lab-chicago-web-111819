@@ -22,7 +22,8 @@ def apply_coupons(cart, coupons)
         if cart.keys.include?(new_item)
           cart[new_item][:count] += 1
         else
-          cart[new_item] = {:price => coupon[:cost], :count => 1, :clearance => cart[coupon[:item]][:clearance]}
+          cart[new_item] = {:price => coupon[:cost], 
+          :count => 1, :clearance =>  cart[coupon[:item]][:clearance]}
         end
       end
     end
